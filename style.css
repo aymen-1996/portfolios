@@ -166,9 +166,6 @@ li a:hover {
 }
 
 
-
-
-
 .main button:hover {
   background-color: var(--primary-color);
   color: white;

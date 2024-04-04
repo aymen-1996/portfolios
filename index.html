@@ -387,6 +387,24 @@
     </button>
   </div>
 
+  <div class="image-with-button">
+    <div class="image-container1">
+        <img src="images/pfe.png" alt="">
+        <div class="image-title">PFE</div>
+    </div>
+    <button class="image-button" onclick="ouvrirPopup('PFE')">Voir</button>
+</div>
+
+<div class="popup-container" id="popupPFE">
+  <button class="close-button" onclick="fermerPopup('PFE')">Fermer</button>
+  <video class="popup-video" id="videoPlayer" controls>
+      <source src="videos/PFE.mp4" type="video/mp4">
+      Votre navigateur ne prend pas en charge la vidéo HTML5.
+  </video>
+  <button class="toggle-button" aria-label="Lecture/Arrêt">
+    <span class="icon play-icon"></span>
+</button>
+</div>
         <div class="image-with-button">
           <div class="image-container1">
               <img src="images/offrejax.png" alt="">
@@ -406,29 +424,6 @@
       </button>
     </div>
     
-    
-    
-
-      
-
-          <div class="image-with-button">
-            <div class="image-container1">
-                <img src="images/pfe.png" alt="">
-                <div class="image-title">PFE</div>
-            </div>
-            <button class="image-button" onclick="ouvrirPopup('PFE', 'https://drive.google.com/file/d/1KMeXV85bsal8o5n3zgeeJo87hKEV5-V8/preview')">Voir</button>
-        </div>
-        
-        
-        <div class="popup-container" id="popupPFE">
-          <button class="close-button" onclick="fermerPopup('PFE')">Fermer</button>
-          <iframe class="popup-video" id="videoPFE" src="https://drive.google.com/file/d/1KMeXV85bsal8o5n3zgeeJo87hKEV5-V8/preview" frameborder="0" allowfullscreen loading="lazy"></iframe>
-        </div>
-      
-        
-       
-      
-     
       <div class="image-with-button">
         <div class="image-container1">
             <img src="images/cpljobs.jpg" alt="">
@@ -449,7 +444,8 @@
     </button>
   </div>
 
-           
+         
+  
         </div>
       </section>
       <footer id="social-contact">
