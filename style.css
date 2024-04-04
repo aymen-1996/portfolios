@@ -136,6 +136,38 @@ li a:hover {
     margin-top: 2rem;
     cursor: pointer;
 }
+.popup-container {
+    position: relative;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  color: rgb(14, 158, 224);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5s ease; 
+}
+
+.play-icon::before {
+  content: "\f04b"; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+  transition: transform 0.3s ease;
+}
+
+.play-icon:hover::before {
+  transform: scale(1.1);
+}
+
+
+
+
 
 .main button:hover {
   background-color: var(--primary-color);

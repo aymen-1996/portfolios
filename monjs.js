@@ -118,6 +118,36 @@ function fermerTousLesPopups() {
 }
 
 
+
+document.querySelectorAll('.toggle-button').forEach(function(button) {
+  var video = button.parentNode.querySelector('video');
+  var icon = button.querySelector('.icon');
+
+  video.addEventListener('play', function() {
+    icon.classList.remove('play-icon');
+  });
+
+  video.addEventListener('pause', function() {
+    icon.classList.add('play-icon');
+  });
+
+
+
+  button.addEventListener('click', function() {
+    if (video.paused || video.ended) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+});
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('.image-with-button');
 

@@ -338,13 +338,15 @@
             </div>
             <button class="image-button" onclick="ouvrirPopup('Canvas')">Voir</button>
         </div>
-        
         <div class="popup-container" id="popupCanvas">
-            <button class="close-button" onclick="fermerPopup('Canvas')">Fermer</button>
-            <video class="popup-video" controls>
-                <source src="videos/canvas.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la vidéo HTML5.
-            </video>
+          <button class="close-button" onclick="fermerPopup('Canvas')">Fermer</button>
+          <video class="popup-video" controls>
+              <source src="videos/canvas.mp4" type="video/mp4">
+              Votre navigateur ne prend pas en charge la vidéo HTML5.
+          </video>
+          <button class="toggle-button" aria-label="Lecture/Arrêt">
+              <span class="icon play-icon"></span>
+          </button>
         </div>
 
         <div class="image-with-button">
@@ -355,13 +357,16 @@
           <button class="image-button" onclick="ouvrirPopup('facture')">Voir</button>
       </div>
       
-      <div class="popup-container" id="popupfacture">
-          <button class="close-button" onclick="fermerPopup('facture')">Fermer</button>
-          <video class="popup-video" controls>
-              <source src="videos/facture.mp4" type="video/mp4">
-              Votre navigateur ne prend pas en charge la vidéo HTML5.
-          </video>
-      </div>
+     <div class="popup-container" id="popupfacture">
+  <button class="close-button" onclick="fermerPopup('facture')">Fermer</button>
+  <video class="popup-video" controls>
+      <source src="videos/facture.mp4" type="video/mp4">
+      Votre navigateur ne prend pas en charge la vidéo HTML5.
+  </video>
+  <button class="toggle-button" aria-label="Lecture/Arrêt">
+      <span class="icon play-icon"></span>
+  </button>
+</div>
 
       <div class="image-with-button">
         <div class="image-container1">
@@ -372,12 +377,15 @@
     </div>
     
     <div class="popup-container" id="popupCommercio">
-        <button class="close-button" onclick="fermerPopup('Commercio')">Fermer</button>
-        <video class="popup-video" controls>
-            <source src="videos/commercio.mp4" type="video/mp4">
-            Votre navigateur ne prend pas en charge la vidéo HTML5.
-        </video>
-    </div>
+      <button class="close-button" onclick="fermerPopup('Commercio')">Fermer</button>
+      <video class="popup-video" id="videoPlayer" controls>
+          <source src="videos/commercio.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la vidéo HTML5.
+      </video>
+      <button class="toggle-button" aria-label="Lecture/Arrêt">
+        <span class="icon play-icon"></span>
+    </button>
+  </div>
 
         <div class="image-with-button">
           <div class="image-container1">
@@ -388,12 +396,18 @@
       </div>
       
       <div class="popup-container" id="popupOffreJax">
-          <button class="close-button" onclick="fermerPopup('OffreJax')">Fermer</button>
-          <video class="popup-video" controls>
-              <source src="videos/offrejax.mp4" type="video/mp4">
-              Votre navigateur ne prend pas en charge la vidéo HTML5.
-          </video>
-      </div>
+        <button class="close-button" onclick="fermerPopup('OffreJax')">Fermer</button>
+        <video class="popup-video" id="videoPlayer" controls>
+            <source src="videos/offrejax.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la vidéo HTML5.
+        </video>
+        <button class="toggle-button" aria-label="Lecture/Arrêt">
+          <span class="icon play-icon"></span>
+      </button>
+    </div>
+    
+    
+    
 
       
 
@@ -420,14 +434,20 @@
             <img src="images/cpljobs.jpg" alt="">
             <div class="image-title">CplJobs</div>
         </div>
-        <button class="image-button" onclick="ouvrirPopup('CplJobs', 'https://drive.google.com/file/d/1mWW0VSACGeyKgfFEnOeHmmHiXwpDBHsW/preview')">Voir</button>
+        <button class="image-button" onclick="ouvrirPopup('CplJobs')">Voir</button>
     </div>
     
     
     <div class="popup-container" id="popupCplJobs">
       <button class="close-button" onclick="fermerPopup('CplJobs')">Fermer</button>
-      <iframe class="popup-video" id="videoCplJobs" src="https://drive.google.com/file/d/1mWW0VSACGeyKgfFEnOeHmmHiXwpDBHsW/preview" frameborder="0" allowfullscreen loading="lazy"></iframe>
-    </div>
+      <video class="popup-video" id="videoPlayer" controls>
+          <source src="videos/Cpljobs.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la vidéo HTML5.
+      </video>
+      <button class="toggle-button" aria-label="Lecture/Arrêt">
+        <span class="icon play-icon"></span>
+    </button>
+  </div>
 
            
         </div>
